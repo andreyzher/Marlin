@@ -24,8 +24,8 @@
 #define CONFIG_EXAMPLES_DIR "Creality/Ender-5/BigTreeTech SKR 1.4 Turbo (TMC2209)"
 
 //#define E3D           // Enable for the E3D all metal hotend.
-#define E3D_Extreme     // Enable to print at over 285°C. Strongly discouraged by E3D but I neeeded it briefly. They say a little over isn't too risky but should not be done long term.
-#define chamber         // Enable for Heated Chamber. Thermistor should be connected to TEMP-E1, Heater to the port next to the bed heater (with the hotend heatsink fan moved to an always-on pin).
+// #define E3D_Extreme     // Enable to print at over 285°C. Strongly discouraged by E3D but I neeeded it briefly. They say a little over isn't too risky but should not be done long term.
+// #define chamber         // Enable for Heated Chamber. Thermistor should be connected to TEMP-E1, Heater to the port next to the bed heater (with the hotend heatsink fan moved to an always-on pin).
 #define TMC2209_Enabled // Enable for TMC2209 drivers.
 #define SKR_14_Turbo    // Enable for the SKR 1.4 turbo.
 
@@ -77,7 +77,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(jagoosw, Ender-5)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(andreyzher, Ender-5)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -959,7 +959,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 130 }
 
 /**
  * Default Max Feed Rate (mm/s)
